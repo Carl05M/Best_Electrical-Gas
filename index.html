@@ -359,6 +359,16 @@
     .open-item { border-right: none; }
     .open-item:nth-last-child(-n+2) { border-bottom: none; }
     .open-item:last-child { border-bottom: 1px solid var(--rule-light); }
+    .systems-row { flex-direction: column; }
+    .system-arrows { flex-direction: row; justify-content: center; padding: 8px 0; gap: 4px; }
+    .arrow-line { width: 24px; height: 1px; }
+    .arrow-line--right::after { top: -3px; }
+    .arrow-line--left::before { top: -3px; }
+    .parts-row { flex-direction: column; gap: 12px; }
+    .parts-row-label { width: auto; padding-top: 0; }
+    .parts-row-items { flex-direction: column; gap: 8px; }
+    .parts-row-item { flex-direction: row; align-items: center; gap: 10px; }
+    .parts-row-tick { width: 8px; height: 1px; margin-bottom: 0; }
     .part-header { grid-template-columns: 48px 1fr 24px; }
     .part-num { font-size: 36px; }
   }
@@ -371,7 +381,7 @@
     <div class="header-left">
       <div class="eyebrow">Integration program · program-level plan</div>
       <h1>Best Electrical and Gas<br>MYOB ↔ Tradify</h1>
-      <div class="meta">Scoping documents: Plan and implement links between Tradify, MYOB and webforms to reduce employee double-handling and simplify workflows.</div>
+      <div class="meta">Scoping document, not an implementation spec. Each part gets its own design spec before build begins.</div>
     </div>
   </header>
 
